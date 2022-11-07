@@ -2,20 +2,20 @@ import pandas as pd
 import re
 from tkinter.filedialog import askopenfilename
 
-mail_filetypes = (
+MAIL_FILETYPES = (
         ('text files', '*.txt'),
         ('All files', '*.*')
     )
 
-word_filetypes = (
+WORD_FILETYPES = (
         ('text files', '*.csv'),
         ('All files', '*.*')
     )
 
 MAIL = askopenfilename(title='Select Mail .txt file',
-        filetypes=mail_filetypes)
+        filetypes=MAIL_FILETYPES)
 WORDS = askopenfilename(title='Select a List of Words .csv file',
-        filetypes=word_filetypes)
+        filetypes=WORD_FILETYPES)
 
 OUTPUT_MAIL = 'output_files/mail.txt'
 OUTPUT_CHECK = 'output_files/check_flag.csv'
